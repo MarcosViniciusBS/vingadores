@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Avengers - Semana do Zero Ao Programador Contratado</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/estilos.css">
+    <link rel="stylesheet" href="./src/css/responsivo.css">
+  </head>
+  <body>
+    <header class="cabecalho">
+      <img class="logo" src="./src/imagens/logo.png" alt="Logo Avengers">
+    </header>
+
+    <main class="selecao-de-personagens">
+      <section class="personagens">
+        <h1 class="titulo">Selecione um vingador</h1>
+        <ul class="lista-de-personagens">
+          <li class="personagem selecionado" id="capitao" data-name="Capitão America" data-description="Steve Rogers é um veterano da segunda guerra mundial que gmahou força e agilidades sobre-humanas com o soro do super soldado.">
+            <img
+              src="./src/imagens/capitao-card.png"
+              alt="Personagem Capitão America"
+            />
+          </li>
+
+          <li class="personagem selecionado" id="homem-de-ferro" data-name="Homem de Ferro" data-description="Gênio, bilionário, playboy e filantropo. Tony Stark desistiu de seu império lucrativos em armamento após ver o mal que elas faziam, e decidiu ai ser o Homem de Ferro e proteger os mais fracos 
+          ">
+            <img
+              src="./src/imagens/homem-de-ferro-card.png"
+              alt="Personagem Homem de Ferro"
+            />
+          </li>
+
+          <li class="personagem selecionado" id="thor" data-name="Thor" data-description="O deus do Trovão. Thor Odinson é um deus asgardiano que possui duas armas mortais, uma sendo o Strormbreaker que pode conjurar a bifrost e o Mjolnir que só quem for digno como Thor poderá empunhar.
+          ">
+            <img
+              src="./src/imagens/thor-card.png"
+              alt="Personagem Thor"
+            />
+          </li>
+          <li class="personagem selecionado" id="hulk" data-name="Hulk" data-description="O Gigante Esmeralda. Após um acidente com radiação gama o cientista Bruce Banner se transforma no incrível Hulk. pacifico e brilhante como cientista, mas mortal e feroz como Hulk.
+          ">
+            <img
+              src="./src/imagens/hulk-card.png"
+              alt="Personagem Hulk"
+            />
+          </li>
+          <li class="personagem selecionado" id="viuva" data-name="Viúva Negra" data-description="Espiã e assassina. Natasha Romanoff foi treinada para eliminar seus alvos, mas após um encontro em Budapeste com Clint Barton ela passa a usar suas habilidades para o bem">
+            <img
+              src="./src/imagens/viuva-card.png"
+              alt="Personagem Viúva Negra"
+            />
+          </li>
+          <li class="personagem selecionado" id="gaviao" data-name="Gavião Arqueiro" data-description="Clint Barton, mas conhecido como Gavião Arqueiro é excelente com Arco e Flecha, mesmo sendo um cara normal, Clint tem inúmeras habilidades de combate e nunca erra seus alvos.
+          ">
+            <img
+              src="./src/imagens/gaviao-card.png"
+              alt="Personagem Gaviaõ Arqueiro"
+            />
+          </li>
+          <li class="personagem selecionado" id="wanda" data-name="Feiticeira Escarlate" data-description=" Feiticeira Escarlate. Wanda Maximoff é uma bruxa poderosa, cujo seus poderes vão muito além da imaginação. O ser mais poderoso da terra-616.">
+            <img
+              src="./src/imagens/wanda-card.png"
+              alt="Personagem Feiticeira Escarlate"
+            />
+          </li>
+          <li class="personagem selecionado" id="visao" data-name="Visão" data-description="Visão é um robô com corpo humanoide feito de vibranium, criado a partir de Jarvis e Ultron, Visão vem evoluindo e hoje não se sabe se é mais máquina ou homem. ">
+            <img
+              src="./src/imagens/visao-card.png"
+              alt="Personagem Visão"
+            />
+          </li>
+          <li class="personagem selecionado" id="aranha" data-name="Homem Aranha" data-description="O Amigão da Vizinhança. Peter Parker é um adolecente que foi picado por uma aranha radioativa que lhe deu habilidades de escalar paredes, super força e reflexo super aguçados. Agora ele veste uma máscara e defende a cidade como Homem Aranha.
+          ">
+            <img
+              src="./src/imagens/aranha-card.png"
+              alt="Personagem Homem Aranha"
+            />
+          </li>
+          <li class="personagem selecionado" id="pantera" data-name="Pantera Negra" data-description="O Rei de Wakanda. T’Challa é o Governante do país mais avançado do mundo, embora isso seja verdade Wakanda ficou invisível do mundo por milhares de anos e nada se sabia da sua existência, a não ser do seu protetor Pantera Negra.
+          ">
+            <img
+              src="./src/imagens/pantera-card.png"
+              alt="Personagem Pantera Negra"
+            />
+          </li>
+          <li class="personagem selecionado" id="estranho" data-name="Doutor Estranho" data-description="Stephen Strange era um neurocirurgião brilhante, mas após um terrível acidente ele busca curar suas mãos em Kamar-taj com a anciã e acaba se tornando um mago muito poderoso.
+          ">
+            <img
+              src="./src/imagens/estranho-card.png"
+              alt="Personagem Doutor Estranho"
+            />
+          </li>
+          <li class="personagem selecionado" id="formiga" data-name="Hoemem Formiga" data-description="Scott Lang é um ex-criminoso que ao roubar o traje de Hank Pym acaba se tornando o Homem Formiga. capaz de diminuir e esticar a níveis extremos Lang usa suas habilidade para se redimir e ajudar os Vingadores. 
+          ">
+            <img
+              src="./src/imagens/formiga-card.png"
+              alt="Personagem Homem Formiga "
+            />
+          </li>
+         
+        </ul>
+      </section>
+      <section class="personagem-selecionado">
+        <img
+          class="personagem-grande"
+          src="./src/imagens/card-capitao.png"
+          alt="Personagem Selecionado"
+        />
+
+        <div class="informacoes-personagem">
+          <h2 class="nome-personagem" id="nome-personagem">Capitão America</h2>
+          <p class="descricao-personagem" id="descricao-personagem">
+            Steve Rogers é um veterano da segunda guerra mundial que gmahou força e agilidades sobre-humanas com o soro do super soldado.
+          </p>
+        </div>
+      </section>
+    </main>
+    <script src="./src/js/index.js"></script>
+  </body>
+</html>
